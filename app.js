@@ -111,7 +111,7 @@ let accessToken = null;
 setInterval(() => {
 
     const lastActivityString = cache.get('lastActivityString', null) || 'No activities' 
-    console.log('Last Activity: '+cache.get('lastActivityString', null))
+    console.log('Last Activity: ' + cache.get('lastActivityString', null))
     
     getAccessToken()
       .then(token => {
@@ -124,7 +124,7 @@ setInterval(() => {
 
     axios.get('https://www.strava.com/api/v3/clubs/1429627/activities?page=1&per_page=1', {
         headers: {
-            'Authorization': 'Bearer 051d72db4b8d1e81bd25f82d9c83ca67ec8520a6'
+            'Authorization': 'Bearer ' + accessToken
         }
     }).then((response) => {
 
