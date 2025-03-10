@@ -122,9 +122,9 @@ setInterval(() => {
           console.error(error)
       })
 
-    axios.get('https://www.strava.com/api/v3/clubs/1100648/activities?page=1&per_page=1', {
+    axios.get('https://www.strava.com/api/v3/clubs/1429627/activities?page=1&per_page=1', {
         headers: {
-            'Authorization': 'Bearer '+accessToken
+            'Authorization': 'Bearer 051d72db4b8d1e81bd25f82d9c83ca67ec8520a6'
         }
     }).then((response) => {
 
